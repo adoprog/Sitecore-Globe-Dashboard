@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>WebGL Sitecore Globe Dashboard</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="/globe/styles.css" rel="stylesheet" />
+    <link type="text/css" href="/globe/third-party/jquery-ui/css/smoothness/jquery-ui-1.8.13.custom.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+    </div>
+    <div id="info">
+        The <a href="http://www.chromeexperiments.com/globe">WebGL Globe</a> is an open
+        platform for visualizing geographic data. <span class="bull">&bull;</span> <a href="http://code.google.com/p/webgl-globe/">
+            Get the code</a> <span class="bull">&bull;</span> Sitecore Dashboard Globe created by Alex Doroshenko
+    </div>
+    <div id="currentInfo">
+        <div class="datePicker">
+            <label for="from">
+                From
+            </label><br />
+            <input type="text" id="from" name="from" /><br />
+            <label for="to">
+                to                
+            </label><br />
+            <input type="text" id="to" name="to" /><br /><br />
+            <a href="#">
+                <img src="start.png" alt="Start" width="150px" id="LoadData" />
+            </a>
+        </div>
+        <div style="clear: both">
+        </div>
+        <ul id="trafficTypes">
+        </ul>
+    </div>
+    <div id="title">
+        Visit value by traffic type
+    </div>
+
+    <script type="text/javascript" src="/globe/third-party/Three/ThreeWebGL.js"></script>
+    <script type="text/javascript" src="/globe/third-party/Three/ThreeExtras.js"></script>
+    <script type="text/javascript" src="/globe/third-party/Three/RequestAnimationFrame.js"></script>
+    <script type="text/javascript" src="/globe/third-party/Three/Detector.js"></script>
+    <script type="text/javascript" src="/globe/globe.js"></script>
+    <script type="text/javascript" src="/globe/third-party/jquery-ui/js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="/globe/third-party/jquery-ui/js/jquery-ui-1.8.13.custom.min.js"></script>
+    <script type="text/javascript" src="/globe/scripts.js"></script>
+</body>
+</html>

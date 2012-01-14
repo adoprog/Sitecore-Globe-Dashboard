@@ -1,0 +1,118 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Globe Dashboard</PackageName>
+      <Author>Alexander Doroshenko</Author>
+      <Version>1.0.0.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>This project is based on "The WebGL Globe" by Google Data Arts Team - http://www.chromeexperiments.com/globe
+
+This package installs only files.
+
+"/globe" and subfolders
+"/GlobeService.svc"'
+"/bin/Sitecore.SharedSource.GlobeDashboard.dll"
+
+After the installation, add the following lines to your web.config file:
+
+  &lt;system.serviceModel&gt;
+    &lt;behaviors&gt;
+      &lt;endpointBehaviors&gt;
+        &lt;behavior name="Sitecore.SharedSource.GlobeDashboard.GlobeServiceAspNetAjaxBehavior"&gt;
+          &lt;enableWebScript /&gt;
+        &lt;/behavior&gt;
+      &lt;/endpointBehaviors&gt;
+    &lt;/behaviors&gt;
+    &lt;serviceHostingEnvironment aspNetCompatibilityEnabled="true" /&gt;
+    &lt;services&gt;
+      &lt;service name="Sitecore.SharedSource.GlobeDashboard.GlobeService"&gt;
+        &lt;endpoint address="" behaviorConfiguration="Sitecore.SharedSource.GlobeDashboard.GlobeServiceAspNetAjaxBehavior" binding="webHttpBinding" contract="Sitecore.SharedSource.GlobeDashboard.GlobeService" /&gt;
+      &lt;/service&gt;
+    &lt;/services&gt;
+  &lt;/system.serviceModel&gt;</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <files>
+      <Root>/globe</Root>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include>
+        <FileNameFilter>
+          <Pattern />
+          <AcceptDirectories>False</AcceptDirectories>
+        </FileNameFilter>
+        <FileDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+        <FileDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+      </Include>
+      <Exclude />
+      <Name>Globe Folder</Name>
+    </files>
+    <xfiles>
+      <Entries>
+        <x-item>/GlobeService.svc</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Globe Service</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Sitecore.SharedSource.GlobeDashboard.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>DLL</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
